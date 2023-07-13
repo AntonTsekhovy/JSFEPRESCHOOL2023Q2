@@ -52,3 +52,24 @@ a {
   padding: 0 rem(10);
   overflow: visible;
 }
+
+.btn {
+  font-family: "Inter", sans-serif;
+  color: #0c0c0e;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.625rem;
+  text-transform: capitalize;
+  letter-spacing: 0.0625rem;
+  background: white;
+  padding: 0.5625rem 1.6875rem;
+  outline: none;
+  border-radius: 0.125rem;
+  border: 0.0625rem solid #0c0c0e;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #bb945f;
+  border: 0.0625rem solid #bb945f;
+}
