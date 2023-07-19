@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap");
 html {
   box-sizing: border-box;
   overflow-wrap: break-word;
@@ -49,7 +50,7 @@ a {
   max-width: 1440px;
   min-width: 290px;
   margin: 0 auto;
-  padding: 0 rem(10);
+  padding: 0 0.625rem;
   overflow: visible;
 }
 
@@ -94,4 +95,66 @@ a {
   top: 3.6875rem;
   left: 50%;
   transform: translate(-50%);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  background: #0c0c0e;
+  padding: 1.25rem;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.875rem;
+}
+.header__logo {
+  color: #ffffff;
+  font-family: "Forum", cursive;
+  font-size: 1.875rem;
+  font-weight: 400;
+  line-height: 3.125rem;
+  letter-spacing: 0.0375rem;
+  white-space: nowrap;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.875rem;
+  padding-right: 2.5rem;
+}
+.header__link {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 3.125rem;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+.header__link:hover {
+  color: #bb945f;
+}
+.header__profil {
+  cursor: pointer;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__icon {
+  width: 1.125rem;
+  height: 1.125rem;
+  fill: black;
 }
