@@ -247,6 +247,142 @@ body {
   background: #0c0c0e;
 }
 
+.favorites {
+  padding: 0.625rem 1.25rem 2.5rem;
+}
+.favorites__title {
+  margin-bottom: 2.8125rem;
+}
+.favorites__season {
+  margin-bottom: 2.5rem;
+  color: #000000;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.favorites__sort {
+  display: flex;
+  margin-bottom: 2.25rem;
+}
+.favorites__radio {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+.favorites__radio:checked + .favorites__castom-radio::before {
+  width: 9px;
+  height: 9px;
+}
+.favorites__castom-radio {
+  position: relative;
+  display: inline-block;
+  width: 1.0625rem;
+  height: 1.0625rem;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #000000;
+  vertical-align: text-top;
+  margin-right: 1.25rem;
+}
+.favorites__castom-radio:before {
+  position: absolute;
+  content: " ";
+  width: 0;
+  height: 0;
+  background: #000000;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%);
+}
+.favorites__label {
+  margin-right: 6.25rem;
+  text-transform: capitalize;
+  color: #000000;
+  font-size: 1.25rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.favorites__inner {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  padding-right: 2.5rem;
+}
+.favorites__item {
+  width: 34.375rem;
+  min-height: 34.6875rem;
+  border: 1px solid #0c0c0e;
+  position: relative;
+  padding: 0.9375rem 10.9375rem 3.75rem 0.9375rem;
+}
+.favorites__subtitle {
+  position: relative;
+  text-transform: capitalize;
+  color: #000000;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 0.125rem;
+  margin-bottom: 1.25rem;
+}
+.favorites__subtitle::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 3.75rem;
+  height: 1px;
+  background: #bb945f;
+}
+.favorites__booktitle {
+  text-transform: uppercase;
+  color: #0c0c0e;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: 0.125rem;
+}
+.favorites__autor {
+  text-transform: capitalize;
+  color: #0c0c0e;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: 0.125rem;
+}
+.favorites__text {
+  color: #0c0c0e;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 2.75rem;
+  text-transform: capitalize;
+  letter-spacing: 0.125rem;
+}
+.favorites__button {
+  position: absolute;
+  left: 1.25rem;
+  bottom: 0.9375rem;
+}
+.favorites__img-box {
+  position: absolute;
+  bottom: -1px;
+  right: -2.5rem;
+  height: 18.75rem;
+  width: 12.5rem;
+  background: #8e8e8e;
+}
+.favorites__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .footer {
   background: #0c0c0e;
   padding: 1.25rem 1.25rem 2.75rem;
