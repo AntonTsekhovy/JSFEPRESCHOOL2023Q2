@@ -383,6 +383,99 @@ body {
   object-fit: cover;
 }
 
+.libraryCard {
+  padding: 1.25rem 1.25rem 2.5rem;
+}
+.libraryCard__title {
+  padding-bottom: 3.75rem;
+}
+.libraryCard__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+.libraryCard__find {
+  flex: 0 1 37.5rem;
+}
+.libraryCard__find-title {
+  color: #000000;
+  font-size: 1.875rem;
+  font-weight: 400;
+  letter-spacing: 0.0375rem;
+  padding-bottom: 1.875rem;
+  text-align: center;
+}
+.libraryCard__form {
+  text-align: center;
+  padding: 1.25rem 1.25rem 1.875rem;
+  border: 3px solid #bb945f;
+}
+.libraryCard__label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1.25rem;
+  padding: 1.25rem 1.25rem 1.5625rem;
+  color: #000000;
+  font-family: "Forum", cursive;
+  font-weight: 400;
+  font-size: 1.875rem;
+  line-height: 3.125rem;
+  letter-spacing: 0.0375rem;
+  background: #bb945f;
+  margin-bottom: 1.25rem;
+}
+.libraryCard__name,
+.libraryCard__number {
+  padding: 0.5rem 1.25rem;
+  line-height: 3.125rem;
+  border-radius: 0.625rem;
+  font-size: 1.875rem;
+  border: 0.1px solid #bb945f;
+}
+.libraryCard__name::placeholder,
+.libraryCard__number::placeholder {
+  color: #8e8e8e;
+  font-size: 1.875rem;
+  font-family: "Forum", cursive;
+  font-weight: 400;
+  letter-spacing: 0.0375rem;
+}
+.libraryCard__button {
+  font-size: 1.25rem;
+  padding: 0.625rem 2.5rem;
+}
+.libraryCard__get {
+  flex: 0 1 28.5rem;
+  text-align: right;
+}
+.libraryCard__get-title {
+  color: #000000;
+  font-family: "Forum", cursive;
+  font-size: 1.875rem;
+  font-weight: 400;
+  letter-spacing: 0.0375rem;
+  padding-bottom: 2.1875rem;
+}
+.libraryCard__text {
+  color: #000000;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 0.025rem;
+  padding-bottom: 2.1875rem;
+}
+.libraryCard__buttons {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 1.25rem;
+}
+.libraryCard__btn-log,
+.libraryCard__btn-sing {
+  padding: 0.5rem 0.96875rem;
+}
+
 .footer {
   background: #0c0c0e;
   padding: 1.25rem 1.25rem 2.75rem;
