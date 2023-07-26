@@ -51,7 +51,6 @@ a {
   max-width: 1440px;
   min-width: 290px;
   margin: 0 auto;
-  padding: 0 0.625rem;
   overflow: visible;
 }
 
@@ -130,7 +129,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1.875rem;
+  gap: 2.3rem;
   padding-right: 2.5rem;
 }
 .header__link {
@@ -248,10 +247,10 @@ body {
 }
 
 .favorites {
-  padding: 0.625rem 1.25rem 2.5rem;
+  padding: 0.625rem 1.25rem 2.8125rem;
 }
 .favorites__title {
-  margin-bottom: 2.8125rem;
+  margin-bottom: 2.6875rem;
 }
 .favorites__season {
   margin-bottom: 2.5rem;
@@ -297,7 +296,7 @@ body {
   transform: translate(-50%, -50%);
 }
 .favorites__label {
-  margin-right: 6.25rem;
+  margin-right: 5.8125rem;
   text-transform: capitalize;
   color: #000000;
   font-size: 1.25rem;
@@ -355,12 +354,13 @@ body {
   font-weight: 700;
   line-height: 2.5rem;
   letter-spacing: 0.125rem;
+  margin-bottom: 1.25rem;
 }
 .favorites__text {
   color: #0c0c0e;
   font-size: 0.9375rem;
   font-weight: 400;
-  line-height: 2.75rem;
+  line-height: 2.5rem;
   text-transform: capitalize;
   letter-spacing: 0.125rem;
 }
@@ -466,7 +466,7 @@ body {
   padding: 1.25rem 1.25rem 2.5rem;
 }
 .contacts__title {
-  margin-bottom: 2.5rem; /*  */
+  margin-bottom: 2.5rem;
 }
 .contacts__inner {
   display: flex;
@@ -518,7 +518,7 @@ body {
 }
 
 .libraryCard {
-  padding: 1.25rem 1.25rem 2.5rem;
+  padding: 1.6rem 1.25rem 2.5rem;
 }
 .libraryCard__title {
   padding-bottom: 3.75rem;
@@ -549,7 +549,7 @@ body {
   flex-direction: column;
   text-align: left;
   gap: 1.25rem;
-  padding: 1.25rem 1.25rem 1.5625rem;
+  padding: 1.25rem 1.25rem 1rem;
   color: #000000;
   font-family: "Forum", cursive;
   font-weight: 400;
@@ -618,7 +618,7 @@ body {
 .footer__contacts {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: top;
   border-bottom: 0.0625rem solid #ffffff;
   padding-bottom: 1.875rem;
 }
