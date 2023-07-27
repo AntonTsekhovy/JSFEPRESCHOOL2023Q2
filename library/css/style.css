@@ -515,6 +515,9 @@ body {
   letter-spacing: 0.125rem;
   text-transform: capitalize;
 }
+.contacts__mail {
+  font-weight: 700;
+}
 .contacts__phone,
 .contacts__mail {
   transition: all 0.3s ease;
