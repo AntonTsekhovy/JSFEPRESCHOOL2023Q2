@@ -515,10 +515,12 @@ body {
   letter-spacing: 0.125rem;
   text-transform: capitalize;
 }
-.contacts__phone {
+.contacts__phone,
+.contacts__mail {
   transition: all 0.3s ease;
 }
-.contacts__phone:hover {
+.contacts__phone:hover,
+.contacts__mail:hover {
   color: #bb945f;
 }
 .contacts__map {
