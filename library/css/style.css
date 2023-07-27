@@ -60,7 +60,6 @@ a {
   text-align: center;
   font-weight: 700;
   font-size: 0.625rem;
-  text-transform: capitalize;
   letter-spacing: 0.0625rem;
   background: white;
   padding: 0.5625rem 1.6875rem;
@@ -73,6 +72,22 @@ a {
 .btn:hover {
   background: #bb945f;
   border: 0.0625rem solid #bb945f;
+}
+.btn:first-letter {
+  text-transform: uppercase;
+}
+.own {
+  color: #bb945f;
+  text-align: center;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.0625rem;
+  background: white;
+  padding: 0.5625rem 1.6875rem;
+  outline: none;
+  border-radius: 0.125rem;
+  border: 0.0625rem solid #bb945f;
+  text-transform: capitalize;
 }
 .section-title {
   position: relative;
