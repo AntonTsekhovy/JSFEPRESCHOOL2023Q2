@@ -272,7 +272,7 @@ body {
   margin-bottom: 2.6875rem;
 }
 .favorites__season {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.1875rem; /*  */
   color: #000000;
   font-size: 1.25rem;
   font-weight: 700;
@@ -281,6 +281,8 @@ body {
 .favorites__sort {
   display: flex;
   margin-bottom: 2.25rem;
+  gap: 3.3125rem; /*  */
+  width: 43.75rem;
 }
 .favorites__radio {
   height: 0;
@@ -291,15 +293,21 @@ body {
   width: 9px;
   height: 9px;
 }
+.favorites__radio:checked ~ .favorites__label-text {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.favorites__label-text {
+  transition: all 0.3s;
+  width: 6.25rem;
+}
 .favorites__castom-radio {
   position: relative;
-  display: inline-block;
   width: 1.0625rem;
   height: 1.0625rem;
   border-radius: 50%;
   background: #fff;
   border: 1px solid #000000;
-  vertical-align: text-top;
   margin-right: 1.25rem;
 }
 .favorites__castom-radio:before {
@@ -315,9 +323,9 @@ body {
   transform: translate(-50%, -50%);
 }
 .favorites__label {
-  margin-right: 5.8125rem;
   text-transform: capitalize;
   color: #000000;
+  padding: 0.3125rem 0.3125rem 0.3125rem 0;
   font-size: 1.25rem;
   font-weight: 400;
   display: flex;
@@ -327,7 +335,6 @@ body {
 .favorites__inner {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   flex-wrap: wrap;
   gap: 2.5rem;
   padding-right: 2.5rem;
