@@ -149,7 +149,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2.3rem;
+  gap: 1.9rem;
 }
 .header__link {
   color: #ffffff;
@@ -231,7 +231,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 1.5625rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 2.1rem;
 }
 .about__item {
   position: relative;
@@ -266,7 +266,7 @@ body {
 }
 
 .favorites {
-  padding: 0.625rem 1.25rem 2.8125rem;
+  padding: 0.9rem 1.25rem 2.8125rem;
 }
 .favorites__title {
   margin-bottom: 2.6875rem;
@@ -343,7 +343,7 @@ body {
   min-height: 34.6875rem;
   border: 1px solid #0c0c0e;
   position: relative;
-  padding: 0.9375rem 10.9375rem 3.75rem 0.9375rem;
+  padding: 0.9rem 10.9375rem 3.75rem 1rem;
 }
 .favorites__subtitle {
   position: relative;
@@ -352,7 +352,7 @@ body {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 2.5rem;
-  letter-spacing: 0.125rem;
+  letter-spacing: 0.21rem;
   margin-bottom: 1.25rem;
   font-family: "Forum", cursive;
 }
@@ -410,7 +410,7 @@ body {
 }
 
 .coffeShop {
-  padding: 0.625rem 1.25rem 0;
+  padding: 0.825rem 1.25rem 0;
 }
 .coffeShop__title {
   padding-bottom: 3.75rem;
@@ -457,6 +457,7 @@ body {
 }
 .coffeShop__desserts-item {
   justify-content: flex-end;
+  letter-spacing: 0.15rem;
 }
 .coffeShop__name {
   display: inline-block;
@@ -485,7 +486,7 @@ body {
   transform: translateY(-50%);
 }
 .coffeShop__desserts {
-  flex: 0 1 28.75rem;
+  flex: 0 1 29.75rem;
   text-align: right;
 }
 
@@ -550,7 +551,7 @@ body {
 }
 
 .libraryCard {
-  padding: 1.6rem 1.25rem 2.5rem;
+  padding: 1.4rem 1.25rem 2.2rem;
 }
 .libraryCard__title {
   padding-bottom: 3.75rem;
@@ -573,7 +574,7 @@ body {
 }
 .libraryCard__form {
   text-align: center;
-  padding: 1.25rem 1.25rem 1.875rem;
+  padding: 1rem 1rem 1.875rem;
   border: 3px solid #bb945f;
 }
 .libraryCard__label {
@@ -581,7 +582,7 @@ body {
   flex-direction: column;
   text-align: left;
   gap: 1.25rem;
-  padding: 1.25rem 1.25rem 1rem;
+  padding: 1.25rem 1.25rem 1.7rem;
   color: #000000;
   font-family: "Forum", cursive;
   font-weight: 400;
