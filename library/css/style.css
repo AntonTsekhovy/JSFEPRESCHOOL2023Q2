@@ -276,7 +276,6 @@ body {
   color: #000000;
   font-size: 1.25rem;
   font-weight: 700;
-  text-transform: capitalize;
 }
 .favorites__sort {
   display: flex;
@@ -355,6 +354,7 @@ body {
   line-height: 2.5rem;
   letter-spacing: 0.125rem;
   margin-bottom: 1.25rem;
+  font-family: "Forum", cursive;
 }
 .favorites__subtitle::before {
   position: absolute;
@@ -465,6 +465,7 @@ body {
   display: inline-block;
   padding-left: 13.75rem;
   position: relative;
+  font-family: "Forum", cursive;
 }
 .coffeShop__price:before {
   content: "";
@@ -657,7 +658,7 @@ body {
   flex: 0 0 14.3125rem;
 }
 .footer__address-text {
-  padding-bottom: 0.625rem;
+  padding-bottom: 1rem;
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.25rem;
@@ -707,6 +708,7 @@ body {
 }
 .footer__link {
   transition: all 0.3s ease;
+  padding-left: 7.9375rem;
 }
 .footer__link:hover {
   color: #bb945f;
