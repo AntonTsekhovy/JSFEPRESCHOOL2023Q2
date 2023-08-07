@@ -769,8 +769,19 @@ body {
   border-bottom: 0.0625rem solid #ffffff;
   padding-bottom: 1.875rem;
 }
+@media (max-width: 440px) {
+  .footer__contacts {
+    flex-direction: column;
+    gap: 1.5625rem;
+  }
+}
 .footer__address {
   flex: 0 0 14.3125rem;
+}
+@media (max-width: 440px) {
+  .footer__address {
+    flex: 1 1 6.25rem;
+  }
 }
 .footer__address-text {
   padding-bottom: 1rem;
@@ -805,6 +816,12 @@ body {
   line-height: 1.25rem;
   font-weight: 400;
 }
+@media (max-width: 440px) {
+  .footer__working-hours {
+    flex: 1 1 6.25rem;
+    text-align: left;
+  }
+}
 .footer__work-days {
   padding-bottom: 0.625rem;
 }
@@ -820,10 +837,29 @@ body {
   font-weight: 400;
   line-height: 1.25rem;
   letter-spacing: 0.125rem;
+  gap: 1.25rem;
+}
+@media (max-width: 687px) {
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5625rem;
+  }
 }
 .footer__link {
   transition: all 0.3s ease;
   padding-left: 7.9375rem;
+}
+@media (max-width: 1040px) {
+  .footer__link {
+    padding-left: 4.375rem;
+  }
+}
+@media (max-width: 687px) {
+  .footer__link {
+    padding-left: 0;
+    line-height: 1.875rem;
+  }
 }
 .footer__link:hover {
   color: #bb945f;
