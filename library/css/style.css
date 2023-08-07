@@ -304,6 +304,12 @@ body {
   position: absolute;
   top: 13.75rem;
 }
+@media (max-width: 600px) {
+  .welcome__inner {
+    min-width: 18.125rem;
+    padding: 1.875rem 1.875rem;
+  }
+}
 .welcome__title {
   color: #fff;
   text-align: center;
@@ -313,6 +319,12 @@ body {
   line-height: 3.125rem;
   letter-spacing: 0.1875rem;
   text-transform: uppercase;
+}
+@media (max-width: 444px) {
+  .welcome__title {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
 }
 .about {
   padding: 1.25rem 1.25rem 2.5rem;
