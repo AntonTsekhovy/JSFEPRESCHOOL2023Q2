@@ -111,6 +111,11 @@ a {
   left: 50%;
   transform: translate(-50%);
 }
+@media (max-width: 420px) {
+  .section-title {
+    font-size: 1.5625rem;
+  }
+}
 
 body {
   font-family: "Inter", sans-serif;
@@ -950,7 +955,7 @@ body {
 }
 
 .libraryCard {
-  padding: 1.4rem 1.25rem 2.2rem;
+  padding: 1.25rem 1.25rem 2.6rem;
 }
 .libraryCard__title {
   padding-bottom: 3.75rem;
@@ -959,9 +964,21 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: top;
+  gap: 1.1875rem;
+}
+@media (max-width: 1040px) {
+  .libraryCard__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .libraryCard__find {
   flex: 0 1 37.5rem;
+}
+@media (max-width: 500px) {
+  .libraryCard__find {
+    flex: 1 1 18.125rem;
+  }
 }
 .libraryCard__find-title {
   color: #000000;
@@ -975,13 +992,25 @@ body {
   text-align: center;
   padding: 1rem 1rem 1.875rem;
   border: 3px solid #bb945f;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 768px) {
+  .libraryCard__form {
+    padding: 1.25rem 1.25rem 1.5625rem;
+  }
+}
+@media (max-width: 450px) {
+  .libraryCard__form {
+    width: 18.125rem;
+    margin: 0 auto;
+  }
 }
 .libraryCard__label {
   display: flex;
   flex-direction: column;
   text-align: left;
   gap: 1.25rem;
-  padding: 1.25rem 1.25rem 1.7rem;
+  padding: 1.25rem 1.25rem 1.5625rem;
   color: #000000;
   font-family: "Forum", cursive;
   font-weight: 400;
@@ -989,7 +1018,12 @@ body {
   line-height: 3.125rem;
   letter-spacing: 0.0375rem;
   background: #bb945f;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.2rem;
+}
+@media (max-width: 500px) {
+  .libraryCard__label {
+    font-size: 1.5625rem;
+  }
 }
 .libraryCard__name,
 .libraryCard__number {
@@ -999,6 +1033,12 @@ body {
   font-size: 1.875rem;
   border: 0.1px solid #bb945f;
 }
+@media (max-width: 500px) {
+  .libraryCard__name,
+  .libraryCard__number {
+    font-size: 1.5625rem;
+  }
+}
 .libraryCard__name::placeholder,
 .libraryCard__number::placeholder {
   color: #8e8e8e;
@@ -1007,13 +1047,35 @@ body {
   font-weight: 400;
   letter-spacing: 0.0375rem;
 }
+@media (max-width: 500px) {
+  .libraryCard__name::placeholder,
+  .libraryCard__number::placeholder {
+    font-size: 1.5625rem;
+  }
+}
 .libraryCard__button {
   font-size: 1.25rem;
   padding: 0.625rem 2.5rem;
 }
+@media (max-width: 768px) {
+  .libraryCard__button {
+    letter-spacing: 0.04375rem;
+  }
+}
+@media (max-width: 450px) {
+  .libraryCard__button {
+    font-size: 1.125rem;
+  }
+}
 .libraryCard__get {
   flex: 0 1 28.5rem;
   text-align: right;
+}
+@media (max-width: 1040px) {
+  .libraryCard__get {
+    text-align: center;
+    flex: 0 1 33.75rem;
+  }
 }
 .libraryCard__get-title {
   color: #000000;
@@ -1023,6 +1085,11 @@ body {
   letter-spacing: 0.0375rem;
   padding-bottom: 2.1875rem;
 }
+@media (max-width: 1040px) {
+  .libraryCard__get-title {
+    padding-bottom: 2.5rem;
+  }
+}
 .libraryCard__text {
   color: #000000;
   font-size: 1.25rem;
@@ -1031,11 +1098,21 @@ body {
   letter-spacing: 0.025rem;
   padding-bottom: 2.1875rem;
 }
+@media (max-width: 1040px) {
+  .libraryCard__text {
+    padding-bottom: 2.5rem;
+  }
+}
 .libraryCard__buttons {
   display: flex;
   justify-content: right;
   align-items: center;
   gap: 1.25rem;
+}
+@media (max-width: 1040px) {
+  .libraryCard__buttons {
+    justify-content: center;
+  }
 }
 .libraryCard__btn-log,
 .libraryCard__btn-sing {
