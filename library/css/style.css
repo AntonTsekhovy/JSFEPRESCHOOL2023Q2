@@ -723,6 +723,11 @@ body {
 .coffeShop {
   padding: 0.825rem 1.25rem 0;
 }
+@media (max-width: 768px) {
+  .coffeShop {
+    padding: 0.875rem 1.125rem 0;
+  }
+}
 .coffeShop__title {
   padding-bottom: 3.75rem;
 }
@@ -735,6 +740,11 @@ body {
   letter-spacing: 0.125rem;
   padding-bottom: 2.5rem;
 }
+@media (max-width: 768px) {
+  .coffeShop__text {
+    letter-spacing: 0.11875rem;
+  }
+}
 .coffeShop__subtitle {
   color: #bb945f;
   font-family: "Forum", cursive;
@@ -744,11 +754,22 @@ body {
   letter-spacing: 0.125rem;
   text-transform: capitalize;
 }
+@media (max-width: 500px) {
+  .coffeShop__subtitle {
+    font-size: 1.875rem;
+  }
+}
 .coffeShop__menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1.25rem;
+}
+@media (max-width: 1040px) {
+  .coffeShop__menu {
+    flex-wrap: wrap;
+    gap: 0rem;
+  }
 }
 .coffeShop__coffee {
   flex: 0 1 27.5rem;
@@ -765,6 +786,13 @@ body {
   line-height: 2.5rem;
   letter-spacing: 0.125rem;
   text-transform: capitalize;
+}
+@media (max-width: 500px) {
+  .coffeShop__coffee-item,
+  .coffeShop__desserts-item {
+    flex-direction: column;
+    gap: 0.625rem;
+  }
 }
 .coffeShop__desserts-item {
   justify-content: flex-end;
@@ -789,6 +817,13 @@ body {
   height: 0.0625rem;
   transform: translate(-50%);
 }
+@media (max-width: 500px) {
+  .coffeShop__price:before {
+    left: 50%;
+    top: 0rem;
+    transform: translate(-50%, 50%);
+  }
+}
 .coffeShop__price:after {
   content: "$";
   position: absolute;
@@ -796,9 +831,35 @@ body {
   left: 12.9375rem;
   transform: translateY(-50%);
 }
+@media (max-width: 1040px) {
+  .coffeShop__price:after {
+    left: 13.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .coffeShop__price:after {
+    left: -0.9375rem;
+  }
+}
+@media (max-width: 1040px) {
+  .coffeShop__price {
+    padding-left: 14.375rem;
+  }
+}
+@media (max-width: 500px) {
+  .coffeShop__price {
+    padding-left: 0rem;
+  }
+}
 .coffeShop__desserts {
   flex: 0 1 29.75rem;
   text-align: right;
+}
+@media (max-width: 1040px) {
+  .coffeShop__desserts {
+    margin-left: auto;
+    flex: 0 1 31.25rem;
+  }
 }
 
 .contacts {
