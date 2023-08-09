@@ -511,11 +511,16 @@ body {
 .favorites {
   padding: 0.9rem 1.25rem 2.8125rem;
 }
+@media (max-width: 1040px) {
+  .favorites {
+    padding: 1rem 1.25rem 2.8125rem;
+  }
+}
 .favorites__title {
   margin-bottom: 2.6875rem;
 }
 .favorites__season {
-  margin-bottom: 2.1875rem; /*  */
+  margin-bottom: 2.1875rem;
   color: #000000;
   font-size: 1.25rem;
   font-weight: 700;
@@ -523,8 +528,19 @@ body {
 .favorites__sort {
   display: flex;
   margin-bottom: 2.25rem;
-  gap: 3.3125rem; /*  */
-  width: 43.75rem;
+  gap: 3.3125rem;
+}
+@media (max-width: 768px) {
+  .favorites__sort {
+    margin-bottom: 2rem;
+    gap: 3.3125rem;
+  }
+}
+@media (max-width: 766px) {
+  .favorites__sort {
+    flex-wrap: wrap;
+    gap: 0.625rem;
+  }
 }
 .favorites__radio {
   height: 0;
@@ -581,12 +597,32 @@ body {
   gap: 2.5rem;
   padding-right: 2.5rem;
 }
+@media (max-width: 1040px) {
+  .favorites__inner {
+    justify-content: center;
+  }
+}
+@media (max-width: 590px) {
+  .favorites__inner {
+    padding-right: 0rem;
+  }
+}
 .favorites__item {
   width: 34.375rem;
   min-height: 34.6875rem;
   border: 1px solid #0c0c0e;
   position: relative;
   padding: 0.9rem 10.9375rem 3.75rem 1rem;
+}
+@media (max-width: 768px) {
+  .favorites__item {
+    padding: 0.8125rem 10rem 3.75rem 1.25rem;
+  }
+}
+@media (max-width: 590px) {
+  .favorites__item {
+    padding: 0.625rem 0.9375rem 3.75rem 0.9375rem;
+  }
 }
 .favorites__subtitle {
   position: relative;
@@ -607,6 +643,16 @@ body {
   width: 3.75rem;
   height: 1px;
   background: #bb945f;
+}
+@media (max-width: 768px) {
+  .favorites__subtitle {
+    letter-spacing: 0.06rem;
+  }
+}
+@media (max-width: 590px) {
+  .favorites__subtitle {
+    margin-bottom: 21.875rem;
+  }
 }
 .favorites__booktitle {
   text-transform: uppercase;
@@ -646,10 +692,32 @@ body {
   width: 12.5rem;
   background: #8e8e8e;
 }
+@media (max-width: 590px) {
+  .favorites__img-box {
+    top: 4.375rem;
+    left: 0.9375rem;
+  }
+}
 .favorites__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.winter {
+  display: block;
+}
+
+.spring {
+  display: none;
+}
+
+.summer {
+  display: none;
+}
+
+.autumn {
+  display: none;
 }
 
 .coffeShop {
