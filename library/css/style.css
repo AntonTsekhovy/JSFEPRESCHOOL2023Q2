@@ -651,7 +651,7 @@ body {
 }
 @media (max-width: 768px) {
   .favorites__subtitle {
-    letter-spacing: 0.06rem;
+    letter-spacing: 0.16rem;
   }
 }
 @media (max-width: 590px) {
