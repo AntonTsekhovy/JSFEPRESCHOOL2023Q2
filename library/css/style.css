@@ -502,7 +502,7 @@ body {
   padding: 0.3125rem;
   cursor: pointer;
 }
-.about__point:hover .about__point-span {
+.about__point:first-child .about__point-span {
   background: #bb945f;
 }
 .about__point-span {
