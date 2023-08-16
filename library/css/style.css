@@ -235,7 +235,7 @@ body {
     text-align: center;
     background: #0c0c0e;
     z-index: 2;
-    transition: all 0.3s ease-in-out;
+    transition: right 0.3s ease-in-out;
   }
 }
 .header__list--active {
@@ -253,7 +253,7 @@ body {
   font-weight: 400;
   line-height: 3.125rem;
   text-transform: capitalize;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 .header__link:hover {
   color: #bb945f;
@@ -502,7 +502,7 @@ body {
   padding: 0.3125rem;
   cursor: pointer;
 }
-.about__point:hover .about__point-span {
+.about__point:first-child .about__point-span {
   background: #bb945f;
 }
 .about__point-span {
