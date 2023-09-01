@@ -17,13 +17,79 @@ document.addEventListener("click", (e) => {
     closeMenu();
   }
 });
-console.log(
-  { "Вёрстка соответствует макету. Ширина экрана 768px ": 26 },
-  "\n",
-  {
-    "Ни на одном из разрешений до 640px включительно не появляется горизонтальная полоса прокрутки. Весь контент страницы при этом сохраняется: не обрезается и не удаляется": 12,
-  },
-  "\n",
-  { "На ширине экрана 768рх реализовано адаптивное меню": 12 },
-  "\n"
-);
+
+/////////////////slider////////////////
+const sliderLine = document.querySelector(".about__slider-inner");
+const sldierImages = document.querySelectorAll(".about__item");
+const sliderBtnPrev = document.querySelector(".about__arrow-left");
+const sliderBtnNext = document.querySelector(".about__arrow-right");
+const sliderDots = document.querySelectorAll(".about__point-span");
+
+let sliderCount = 0;
+let sliderWidth;
+
+sliderBtnPrev.addEventListener("click", prevSlide);
+sliderBtnNext.addEventListener("click", nextSlide);
+
+function showSlide() {
+  sliderWidth = document.querySelector(".about__item").offsetWidth;
+  sliderLine.style.width = sliderWidth * sldierImages.length + "px";
+  sldierImages.forEach((item) => (item.style.width = sliderWidth + "px"));
+  rollSlider();
+}
+showSlide();
+
+function nextSlide() {
+  sliderCount++;
+  if (sliderCount >= sldierImages.length) sliderCount = sldierImages.length - 1;
+  rollSlider();
+  thisSlider(sliderCount);
+  arrowInactive();
+}
+
+function prevSlide() {
+  sliderCount--;
+  if (sliderCount < 0) sliderCount = 0;
+  rollSlider();
+  thisSlider(sliderCount);
+  arrowInactive();
+}
+
+function arrowInactive() {
+  if (!sliderCount) {
+    sliderBtnPrev.style.fill = "#8e8e8e";
+    sliderBtnPrev.style.cursor = "auto";
+  } else {
+    sliderBtnPrev.style.fill = "#0c0c0e";
+    sliderBtnPrev.style.cursor = "pointer";
+  }
+  if (sliderCount === sldierImages.length - 1) {
+    sliderBtnNext.style.fill = "#8e8e8e";
+    sliderBtnNext.style.cursor = "auto";
+  } else {
+    sliderBtnNext.style.fill = "#0c0c0e";
+    sliderBtnNext.style.cursor = "pointer";
+  }
+}
+function rollSlider() {
+  sliderLine.style.transform = `translateX(${
+    -sliderCount * (sliderWidth + 25)
+  }px)`;
+}
+
+function thisSlider(index) {
+  sliderDots.forEach((item) => {
+    item.classList.remove("about__point-active");
+  });
+  sliderDots[index].classList.add("about__point-active");
+}
+
+sliderDots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    sliderCount = index;
+    rollSlider();
+    thisSlider(sliderCount);
+  });
+});
+
+/////////////////slider////////////////

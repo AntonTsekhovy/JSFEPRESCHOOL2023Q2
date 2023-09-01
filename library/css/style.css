@@ -348,40 +348,39 @@ body {
 .about__slider {
   position: relative;
 }
-.about__slider-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.about__slider-overflow {
   overflow: hidden;
   margin: 0 auto;
-  height: 35rem;
-  max-width: 87.5rem;
-  gap: 1.5625rem;
   margin-bottom: 2.5rem;
 }
 @media (max-width: 1439px) {
-  .about__slider-inner {
+  .about__slider-overflow {
     margin: 0 auto;
-    max-width: 76.5625rem;
+    max-width: 57.8125rem;
     margin-bottom: 1.25rem;
   }
 }
 @media (max-width: 1270px) {
-  .about__slider-inner {
+  .about__slider-overflow {
     max-width: 57.8125rem;
     margin-bottom: 1.25rem;
   }
 }
 @media (max-width: 1000px) {
-  .about__slider-inner {
+  .about__slider-overflow {
     max-width: 28.125rem;
     margin-bottom: 1.25rem;
   }
 }
-@media (max-width: 590px) {
-  .about__slider-inner {
-    max-width: 90%;
-  }
+.about__slider-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  height: 35rem;
+  max-width: 87.5rem;
+  gap: 1.5625rem;
+  transition: all 0.3s;
 }
 .about__item {
   flex: 0 0 28.125rem;
@@ -390,17 +389,12 @@ body {
 }
 @media (max-width: 1439px) {
   .about__item {
-    flex: 0 0 24.375rem;
+    flex: 0 0 28.125rem;
   }
 }
 @media (max-width: 1270px) {
   .about__item {
     flex: 0 0 28.125rem;
-  }
-}
-@media (max-width: 590px) {
-  .about__item {
-    flex: 0 0 100%;
   }
 }
 .about__image {
@@ -415,7 +409,7 @@ body {
   max-width: 5rem;
   overflow: hidden;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1439px) {
   .about__inner {
     max-width: 6.25rem;
   }
@@ -468,6 +462,8 @@ body {
   }
 }
 .about__arrow-left {
+  fill: #8e8e8e;
+  cursor: auto;
   left: 3.75rem;
 }
 @media (max-width: 715px) {
@@ -502,8 +498,8 @@ body {
   padding: 0.3125rem;
   cursor: pointer;
 }
-.about__point:first-child .about__point-span {
-  background: #bb945f;
+.about__point:hover .about__point-span {
+  background: #8e8e8e;
 }
 .about__point-span {
   display: block;
@@ -511,6 +507,9 @@ body {
   width: 1rem;
   border-radius: 50%;
   background: #0c0c0e;
+}
+.about__point-active {
+  background: #bb945f;
 }
 
 .favorites {
