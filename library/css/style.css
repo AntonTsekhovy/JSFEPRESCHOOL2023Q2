@@ -1551,6 +1551,168 @@ body {
   color: #bb945f;
 }
 
+.buy {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(12, 12, 14, 0.5);
+  backdrop-filter: blur(3px);
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -4;
+}
+@media (max-width: 630px) {
+  .buy {
+    height: auto;
+  }
+}
+.buy__modal {
+  position: relative;
+  width: 40.625rem;
+  height: 33.75rem;
+  background: #ffffff;
+}
+@media (max-width: 630px) {
+  .buy__modal {
+    height: auto;
+  }
+}
+.buy__title {
+  color: #ffffff;
+  background: #0c0c0e;
+  text-align: center;
+  font-family: "Forum", cursive;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  padding: 1.25rem 3.75rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+@media (max-width: 630px) {
+  .buy__title {
+    line-height: 2.1875rem;
+  }
+}
+.buy__span {
+  display: block;
+  background: #ffffff;
+  width: 1.25rem;
+  height: 0.1875rem;
+  transform: rotate(45deg);
+}
+.buy__span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  width: 1.25rem;
+  height: 0.1875rem;
+  transform: rotate(-90deg);
+}
+.buy__inner {
+  padding: 1.875rem 2.5rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  gap: 1.25rem;
+}
+.buy__form {
+  flex: 0 1 12.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  align-items: start;
+}
+.buy__label {
+  color: #000000;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0.01875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.buy__card,
+.buy__month,
+.buy__year,
+.buy__cvc,
+.buy__cardholder,
+.buy__postal,
+.buy__city {
+  border: 1px solid #bb945f;
+  height: 1.25rem;
+  width: 12.5rem;
+}
+.buy__city {
+  margin-bottom: 0.625rem;
+}
+.buy__expiration {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.625rem;
+}
+.buy__month,
+.buy__year {
+  width: 2.8125rem;
+}
+.buy__cvc {
+  width: 2.8125rem;
+  margin-bottom: 0.625rem;
+}
+.buy__button {
+  display: inline-block;
+  padding: 0.5rem 1.625rem;
+  color: #0c0c0e;
+  font-family: "Inter", sans-serif;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.0625rem;
+  background: #ffffff;
+  border-radius: 0.125rem;
+  border: 1px solid #0c0c0e;
+  margin-bottom: 0.625rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.buy__button:hover {
+  background: #bb945f;
+  border: 1px solid #bb945f;
+}
+.buy__price {
+  color: #0c0c0e;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+.buy__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5625rem;
+}
+.buy__text {
+  flex: 0 1 20.625rem;
+  color: #8e8e8e;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0.125rem;
+}
+
 .active {
   visibility: visible;
   opacity: 1;
