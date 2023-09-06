@@ -5,6 +5,7 @@ const login = document.querySelector(".login");
 const register = document.querySelector(".register");
 const buy = document.querySelector(".buy");
 const profile = document.querySelector(".profile");
+const books = document.querySelectorAll(".favorites__item");
 
 /////////////////burgerMenu////////////////
 const toggleMenu = () => {
@@ -89,6 +90,33 @@ document.addEventListener("click", (event) => {
     hide(profile);
     removeScrollLock();
   }
+  /////////////////sortSeason////////////////
+  if (currentElement.closest(".favorites__radio")) {
+    let season = currentElement.getAttribute("value");
+
+    switch (season) {
+      case "winter":
+        showSeason(season);
+        break;
+      case "spring":
+        showSeason(season);
+        break;
+      case "summer":
+        showSeason(season);
+        break;
+      case "autumn":
+        showSeason(season);
+        break;
+    }
+  }
+  function showSeason(season) {
+    books.forEach((book) => {
+      if (book.classList.contains(season)) {
+        book.style.display = "block";
+      } else book.style.display = "none";
+    });
+  }
+  /////////////////sortSeason////////////////
 });
 
 /////////////////slider////////////////

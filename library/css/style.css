@@ -689,6 +689,15 @@ body {
   border: 1px solid #0c0c0e;
   position: relative;
   padding: 0.9rem 10.9375rem 3.75rem 1rem;
+  animation: fade 1.3s ease-in-out;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @media (max-width: 768px) {
   .favorites__item {
