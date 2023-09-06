@@ -1,6 +1,12 @@
 const burger = document.querySelector(".header__burger");
 const list = document.querySelector(".header__list");
+const dropMenu = document.querySelector(".header__dropmenu");
+const login = document.querySelector(".login");
+const register = document.querySelector(".register");
+const buy = document.querySelector(".buy");
+const profile = document.querySelector(".profile");
 
+/////////////////burgerMenu////////////////
 const toggleMenu = () => {
   burger.classList.toggle("header__burger--active");
   list.classList.toggle("header__list--active");
@@ -9,12 +15,79 @@ const closeMenu = () => {
   burger.classList.remove("header__burger--active");
   list.classList.remove("header__list--active");
 };
-document.addEventListener("click", (e) => {
-  const click = e.composedPath().includes(burger);
-  if (click) {
+/////////////////burgerMenu////////////////
+
+const show = (element) => {
+  element.classList.add("active");
+};
+const hide = (element) => {
+  element.classList.remove("active");
+};
+
+const activeScrollLock = () => {
+  document.querySelector("body").classList.add("scroll-lock");
+};
+const removeScrollLock = () => {
+  document.querySelector("body").classList.remove("scroll-lock");
+};
+
+document.addEventListener("click", (event) => {
+  const currentElement = event.target;
+
+  if (currentElement.closest(".header__burger")) {
     toggleMenu();
   } else {
     closeMenu();
+  }
+  if (currentElement.closest(".header__profil")) {
+    show(dropMenu);
+  } else {
+    hide(dropMenu);
+  }
+  if (currentElement.closest(".reference-login")) {
+    show(login);
+    activeScrollLock();
+  }
+  if (
+    currentElement == login ||
+    currentElement.closest(".close") ||
+    currentElement.closest(".reference-register")
+  ) {
+    hide(login);
+    removeScrollLock();
+    event.preventDefault();
+  }
+  if (currentElement.closest(".reference-register")) {
+    show(register);
+    activeScrollLock();
+  }
+  if (
+    currentElement == register ||
+    currentElement.closest(".close") ||
+    currentElement.closest(".reference-login")
+  ) {
+    hide(register);
+    removeScrollLock();
+    event.preventDefault();
+  }
+  if (
+    currentElement.closest(".favorites__button") &&
+    !currentElement.closest(".own")
+  ) {
+    show(login);
+    activeScrollLock();
+  }
+  if (currentElement == buy || currentElement.closest(".close")) {
+    hide(login);
+    removeScrollLock();
+  }
+  if (currentElement.closest(".reference-profile")) {
+    show(profile);
+    activeScrollLock();
+  }
+  if (currentElement == profile || currentElement.closest(".close")) {
+    hide(profile);
+    removeScrollLock();
   }
 });
 
@@ -91,5 +164,4 @@ sliderDots.forEach((dot, index) => {
     thisSlider(sliderCount);
   });
 });
-
 /////////////////slider////////////////
