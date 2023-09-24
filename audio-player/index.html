@@ -8,6 +8,71 @@
     <title>audio-player</title>
   </head>
   <body>
+    <div class="wrapper">
+      <div class="audio-player">
+        <div class="audio-player__cover">
+          <img
+            class="audio-player__img"
+            src="./images/dontstartnow.png"
+            alt=""
+          />
+        </div>
+        <div class="audio-player__control">
+          <button class="audio-player__play">
+            <svg class="audio-player__play-img">
+              <use
+                class="audio-player__play-use"
+                xlink:href="./images/icons/sprite.svg#play"
+              ></use>
+            </svg>
+          </button>
+          <button class="audio-player__backward">
+            <svg class="audio-player__backward-img">
+              <use xlink:href="./images/icons/sprite.svg#backward"></use>
+            </svg>
+          </button>
+          <button class="audio-player__forward">
+            <svg class="audio-player__forward-img">
+              <use xlink:href="./images/icons/sprite.svg#forward"></use>
+            </svg>
+          </button>
+          <div class="audio-player__info">
+            <h2 class="audio-player__artist">Dua Lipa</h2>
+            <p class="audio-player__song">Don't Start Now</p>
+          </div>
+          <div class="audio-player__range-box">
+            <input
+              class="audio-player__range"
+              type="range"
+              id="progress-bar"
+              max="100"
+              min="0"
+              value="0"
+            />
+            <span class="audio-player__currentTime">0:00</span>
+            <span class="audio-player__durationTime">0:00</span>
+          </div>
+        </div>
+      </div>
+      <img class="cover" src="./images/dontstartnow.png" alt="" />
+    </div>
+    <footer class="footer">
+      <div class="conteiner">
+        <div class="footer__wrapper">
+          <div class="footer__year">2023</div>
+          <a class="footer__link" href=" https://rs.school/js-stage0/ "
+            ><svg class="footer__rs-school">
+              <use xlink:href="./images/icons/sprite.svg#rs_school"></use>
+            </svg>
+          </a>
+          <a class="footer__git" href="https://github.com/AntonTsekhovy">
+            <svg class="footer__git-link">
+              <use xlink:href="./images/icons/sprite.svg#github"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
     <script src="./js/app.js"></script>
   </body>
 </html>
