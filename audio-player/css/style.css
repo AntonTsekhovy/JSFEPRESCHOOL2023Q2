@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+html {
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+input {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
+.conteiner {
+  max-width: 1980px;
+  min-width: 290px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: blur(10px);
+}
+.wrapper {
+  overflow: hidden;
+  flex: 1 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background: #333333;
+}
+.audio-player {
+  height: 300pt;
+  width: 250pt;
+  margin: auto;
+  background: #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.audio-player__cover {
+  flex: 1 0 65%;
+  position: relative;
+}
+.audio-player__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s;
+}
+.audio-player__img--active {
+  transform: scale(1.1);
+}
+.audio-player__control {
+  position: relative;
+  flex: 1 0 35%;
+  background: linear-gradient(45deg, rgb(40, 40, 40), rgb(133, 133, 133));
+}
+.audio-player__play {
+  position: absolute;
+  left: 9%;
+  top: 15%;
+  height: 50px;
+  width: 50px;
+  z-index: 4;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+.audio-player__backward {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 12%;
+  right: 10%;
+  font-size: 40px;
+  z-index: 4;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+.audio-player__forward {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 35%;
+  right: 10%;
+  z-index: 4;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+.audio-player__play-img,
+.audio-player__backward-img,
+.audio-player__forward-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  fill: rgb(212, 212, 212);
+  transition: all 0.3s;
+}
+.audio-player__play-img:hover,
+.audio-player__backward-img:hover,
+.audio-player__forward-img:hover {
+  fill: rgb(163, 163, 163);
+}
+.audio-player__play-img:active,
+.audio-player__backward-img:active,
+.audio-player__forward-img:active {
+  transition: fill 0s;
+  fill: #c1ff06;
+}
+.audio-player__info {
+  margin: 5% auto;
+  width: 150px;
+}
+.audio-player__artist {
+  color: #c1ff06;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.audio-player__song {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+}
+.audio-player__range-box {
+  margin: 15px auto;
+  position: relative;
+  width: 160pt;
+}
+.audio-player__range {
+  height: 5px;
+  width: 160pt;
+  background: #000000;
+  border-radius: 30px;
+  appearance: none;
+  cursor: pointer;
+}
+.audio-player__range::-webkit-slider-thumb {
+  appearance: none;
+  margin-top: -3px;
+  margin-left: 0px;
+  height: 10px;
+  width: 7px;
+  border: 0;
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(213, 213, 213),
+    rgb(193, 255, 6)
+  );
+  border-radius: 30px;
+  cursor: pointer;
+}
+.audio-player__currentTime {
+  position: absolute;
+  bottom: -15px;
+  left: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: white;
+}
+.audio-player__durationTime {
+  position: absolute;
+  right: 0;
+  top: -10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: #c1ff06;
+}
+
+.footer {
+  background: linear-gradient(45deg, rgb(40, 40, 40), rgb(133, 133, 133));
+  padding: 0.625rem 1.25rem 0.625rem;
+  color: #ffffff;
+  z-index: 5;
+}
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5625rem;
+  }
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0.125rem;
+  gap: 1.25rem;
+}
+.footer__year {
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+}
+.footer__git-link,
+.footer__rs-school {
+  transition: all 0.3s ease;
+  width: 40px;
+  height: 30px;
+  fill: black;
+}
+.footer__git-link:hover,
+.footer__rs-school:hover {
+  fill: rgb(173, 173, 173);
+}
+.footer__rs-school {
+  width: 100px;
+}
